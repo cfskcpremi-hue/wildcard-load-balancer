@@ -1,7 +1,7 @@
 export async function onRequest(context) {
   const { request, env } = context;
   let url = new URL(request.url);
-  let domainBackend = ['worker-cf-skc.0u-ts0goso.workers.dev'];
+  let domainBackend = ['mamahputri.0u-ts0goso.workers.dev'];
   if (env.HOST) domainBackend = await ADD(env.HOST);
   let pathUji = env.PATH || '/';
   if (pathUji.charAt(0) !== '/') pathUji = '/' + pathUji;
